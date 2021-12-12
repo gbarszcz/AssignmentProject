@@ -38,14 +38,32 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="action\IMenuAction.cs" />
+        <Compile Include="action\LottoBallotsRepeatedMenuAction.cs" />
+        <Compile Include="action\LottoElementCountMenuAction.cs" />
+        <Compile Include="action\LottoMaxOccurrencesMenuAction.cs" />
+        <Compile Include="action\LottoMinOccurrencesMenuAction.cs" />
+        <Compile Include="comparer\IntListComparer.cs" />
         <Compile Include="console\ConsolePosition.cs" />
         <Compile Include="drawers\ErrorMessage.cs" />
         <Compile Include="drawers\IConsoleDrawer.cs" />
         <Compile Include="drawers\inputs\IInputHandler.cs" />
-        <Compile Include="drawers\inputs\MenuInputHandler.cs" />
+        <Compile Include="drawers\inputs\LottoMenuInputHandler.cs" />
+        <Compile Include="drawers\inputs\StringInputHandler.cs" />
         <Compile Include="drawers\Menu.cs" />
+        <Compile Include="model\Lotto.cs" />
+        <Compile Include="model\LottoResult.cs" />
+        <Compile Include="model\MenuElement.cs" />
+        <Compile Include="parser\IFileParser.cs" />
+        <Compile Include="parser\LottoFileParser.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="bin\Debug\dl.txt" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="bin\Debug" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
